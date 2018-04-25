@@ -38,3 +38,5 @@ for(var i = 1; i <= 100; i ++){
 			break;}
 }
 console.log("합계가 1000이 넘은 i 값은? "+i);
+
+

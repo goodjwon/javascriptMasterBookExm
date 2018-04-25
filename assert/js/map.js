@@ -32,3 +32,4 @@ m.set(arry, 'hoge');
 
 console.log(m.get(arry));
 
+
