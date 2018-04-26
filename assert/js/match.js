@@ -9,6 +9,8 @@ var result = strs.match(p);
 
 for (var i =0, len = result.length; i < len; i++){
 	console.log(result[i]);
+	document.write(result[i]);
+	document.write('<br/>');
 }
 
 var re = /s$/;          // 공백체크
