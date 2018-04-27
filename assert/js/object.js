@@ -37,7 +37,14 @@ console.log(obj);
 console.log(obj2);
 
 
+var obj3 = Object.create(Object.prototype,{
+	x : {value:1, writeable : true, configurable : true, enumberable : true },
+	y : {value:2, writeable : true, configurable : true, enumberable : true },
+	z : {value:3, writeable : true, configurable : true, enumberable : true }
+	}
+);
 
+console.log(obj3);
 
 
 
