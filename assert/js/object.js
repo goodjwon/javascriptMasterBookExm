@@ -21,6 +21,25 @@ let pet2 = {
 };
 
 
-let obj =  Object.assign(pet0, pet1, pet2);
+Object.assign(pet0, pet1, pet2);
+
+console.log(pet0);
+
+let obj = {x:1, y:2, z:3};
+let obj2 = new Object();
+obj2.x = 1;
+obj2.y = 2; 
+obj2.z = 3;
+
 
 console.log(obj);
+
+console.log(obj2);
+
+
+
+
+
+
+
+
