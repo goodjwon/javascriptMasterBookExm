@@ -18,3 +18,16 @@ let getTriangle3 = (base, height) => {
 };
 
 console.log("삼각형3의 면적은: "+getTriangle3 (20, 50));
+
+
+
+function printf(format){
+
+	for(var i =0, len = arguments.length; i < len; i ++){
+		var patten = new RegExp ('\\{' + (i-1) + '\\}', 'g');
+		format = format.replace(patten, arguments[i]);
+	}
+	console.log(format);
+};
+
+printf('안녕하세요 {0}씨 나는 {1} 입니다.','시온', '피카추');
