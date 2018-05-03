@@ -58,4 +58,4 @@ console.log("삼각형의 면적은 arg2 "+getTriangelArgs2(5));
 function multi(a = b, b = 5){
 	return a * b;
 }
-console.log(multi());
+console.log(multi()); 
