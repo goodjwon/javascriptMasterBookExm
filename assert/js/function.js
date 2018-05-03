@@ -55,7 +55,32 @@ function getTriangelArgs2(base = 1, height =1) {
 console.log("삼각형의 면적은 arg2 "+getTriangelArgs2(5));
 
 
-function multi(a = b, b = 5){
+function multi(a = 1, b = 5){
 	return a * b;
 }
 console.log(multi()); 
+
+
+
+function sum (...nums){
+	let result = 0;
+	for(let num of nums){
+		if(typeof num !== 'number') {
+			throw new Error ('value is not number');
+		}
+		result += num;
+	}
+	return result;
+}
+
+try{
+	console.log(sum(1, 2, 3, 4, 5, 6, 7, 8));
+} catch(e) {
+	window.alert(e.message);
+}
+
+console.log(Math.max(15,10,-5,78));
+
+console.log(Math.max.apply(null, [1, 2, 3, 78]));
+
+console.log(Math.max(...[1, 2, 3, 77]));
