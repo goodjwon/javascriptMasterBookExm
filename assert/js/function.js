@@ -84,3 +84,24 @@ console.log(Math.max(15,10,-5,78));
 console.log(Math.max.apply(null, [1, 2, 3, 78]));
 
 console.log(Math.max(...[1, 2, 3, 77]));
+
+
+
+function show(x, y = 1) {
+	console.log('x = ' + x);
+	console.log('y = ' +y);
+
+}
+
+show();
+
+
+function required() {
+	throw new Error('인수가 부족합니다.');
+}
+
+function hoge(value = required()) {
+	return value;
+}
+
+console.log('hoge is '+hoge(10));
