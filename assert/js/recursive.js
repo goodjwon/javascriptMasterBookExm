@@ -57,3 +57,46 @@ function e(templates, ...value){
 
 let name = '<"Mario" &  \'Luigi \'>';
 console.log(e `안녕사세요, ${name}씨!` );
+document.write(e `안녕사세요, ${name}씨!` );
+
+
+var y = 'Global';
+function outerFuck() {
+	var y = 'Local Outer'
+
+	function innerFuc() {
+		var z = 'Local Inner'
+
+		console.log(z);
+		console.log(y);
+		console.log(y);
+    }
+
+    innerFuc();
+
+}
+outerFuck();
+
+
+function closure(init) {
+
+	var counter = init;
+
+	return function () {
+		return ++ counter;
+    }
+}
+var myCloser = closure(1);
+
+console.log(myCloser());
+console.log(myCloser());
+console.log(myCloser());
+
+
+var myCloser1 = closure(1);
+var myCloser2 = closure(100);
+
+console.log(myCloser1());
+console.log(myCloser2());
+console.log(myCloser1());
+console.log(myCloser2());
