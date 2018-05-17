@@ -22,7 +22,7 @@ function Traiagle(){
 
 
 Traiagle.prototype.getArea = function(){
-	return this.getBase() * this.getHeight();
+	return this.getBase() * this.getHeight() / 2 ;
 }
 
 
