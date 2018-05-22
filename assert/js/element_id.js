@@ -1,6 +1,6 @@
 var current = new Date();
 
-var res = document.getElementById('result');
+var res = document.getElementById("result2");
 
 console.log(current.toLocaleString());
 
